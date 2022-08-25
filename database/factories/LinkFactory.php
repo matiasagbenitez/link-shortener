@@ -14,7 +14,8 @@ class LinkFactory extends Factory
         return [
             'user_id' => User::factory(),
             'url' => $this->faker->url,
-            'slug' => Str::random(6)
+            'slug' => Str::random(6),
+            'is_enabled' => true
         ];
     }
 
